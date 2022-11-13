@@ -21,8 +21,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 
-  align-items:end;
-  justify-content: center;
+  /* align-items:end; */
+  /* justify-content: center; */
 
   /* column-gap: 10px;
     row-gap: 10px; */
@@ -40,11 +40,34 @@ body {
   /* margin: 10px; */
 }
 
-
 /* aliging properties for child */
-.item:nth-of-type(2){
+/* .item:nth-of-type(2){
     height: 100px;
     width: 100px;
     align-self: center;
     justify-self: center;
+} */
+
+
+/* Span columns */
+.item:nth-of-type(1) {
+  background: #000;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+  /* Short cut for doing above code */
+
+  grid-column: 1 / 3;
+}
+
+/* Span Rows */
+
+.item:nth-of-type(4) {
+    background: red;
+    grid-row:2/4;
+}
+
+.item:nth-of-type(3){
+ background: yellow;
+ grid-column: 2/4;
 }

@@ -1,0 +1,6 @@
+1. Create column layout ---> grid-template-columns
+2. When adding some content in div , other row divs are also taking heights
+grid-auto-rows ---> minmax(100px, auto); --> min rows height will be 100px and max will be whatever content height will be there
+
+3. We have property called minmax(min,max) ==> after min value content will be cut off
+4. 

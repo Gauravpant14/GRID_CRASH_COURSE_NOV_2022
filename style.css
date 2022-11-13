@@ -23,6 +23,9 @@ body {
     row-gap: 10px; */
     /* use both row and column gap */
     gap:10px;
+
+    /* grid-auto-rows: minmax(100px, auto); */
+    /* grid-template-rows: repeat(3, 1fr); */
 }
 
 .item {
